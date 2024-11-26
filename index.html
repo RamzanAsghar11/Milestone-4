@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale" />
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Editable Resume Builder</h1>
+    <form id="resume-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter your number" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Profile Pictue</legend>
+      <label for="profile-picture">Profile Picture:</label>
+<input type="file" id="profile-picture" accept="image/*" />
+</fieldset>
+      <fieldset>
+        <legend>Certification</legend>
+        <label for="certification">Certification:</label>
+        <textarea
+          id="certification1"
+          placeholder="Enter your Certification"
+          required
+        ></textarea>
+        <textarea
+          id="certification2"
+          placeholder="Enter your Certification"
+        ></textarea>
+        <textarea
+          id="certification3"
+          placeholder="Enter your Certification"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education:</label>
+        <textarea
+          id="education1"
+          placeholder="Enter your education"
+          required
+        ></textarea>
+        <textarea id="education2" placeholder="Enter your education"></textarea>
+        <textarea id="education3" placeholder="Enter your education"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience:</label>
+        <textarea
+          id="experience1"
+          placeholder="Enter your work experience"
+          required
+        ></textarea>
+        <textarea
+          id="experience2"
+          placeholder="Enter your work experience"
+        ></textarea>
+        <textarea
+          id="experience3"
+          placeholder="Enter your work experience"
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills:</label>
+        <textarea
+          id="skill1"
+          placeholder="Enter your skills"
+          required
+        ></textarea>
+        <textarea id="skill2" placeholder="Enter your skills"></textarea>
+        <textarea id="skill3" placeholder="Enter your skills"></textarea>
+      </fieldset>
+
+      <button type="submit"><b>Generate Resume</b></button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
